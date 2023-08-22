@@ -3,8 +3,6 @@ on:
   pull_request:
     paths:
       - 'second-project/**'
-      - '!first-project/**'
-      - '!third-project/**'
 jobs:
   only-build-second:
     runs-on: ubuntu-latest
