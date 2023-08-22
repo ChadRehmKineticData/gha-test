@@ -1,6 +1,6 @@
 name: Second Project Test Action
 on: 
-  push:
+  pull_request:
     paths:
       - 'second-project/**'
       - '!first-project/**'
