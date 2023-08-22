@@ -1,8 +1,0 @@
-name: Test Action
-on: [push]
-jobs:
-  test-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Start of job"
-      - run: echo "End of job"

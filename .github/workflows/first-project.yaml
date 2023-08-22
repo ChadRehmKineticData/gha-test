@@ -1,0 +1,13 @@
+name: First Project Test Action
+on: 
+  push:
+    paths:
+      - 'first-project/**'
+      - '!third-project/**'
+      - '!second-project/**'
+jobs:
+  only-build-first:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Start of job on first project"
+      - run: echo "End of job on first project"
